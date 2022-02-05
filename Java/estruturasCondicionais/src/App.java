@@ -16,7 +16,7 @@ public class App {
 
 
 
-        Scanner teclado = new Scanner(System.in);
+        /*Scanner teclado = new Scanner(System.in);
         System.out.println("Digite a idade:");
         int idade = teclado.nextInt();
         teclado.close();
@@ -25,6 +25,24 @@ public class App {
         }
             else {
                 System.out.println("Menor de idade");
+            }*/
+
+        
+        
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Digite o valor de ''a'':");
+        int a = teclado.nextInt();
+        System.out.println("Digite o valor de ''b'':");
+        int b = teclado.nextInt();
+        System.out.println("Digite o valor de ''c'':");
+        int c = teclado.nextInt();
+        teclado.close();
+        int delta = (int) Math.pow(b, 2) -4 * a * c;
+        if (delta<0) {
+            System.out.println("Não há raízes reais");
+        }
+            else {
+                System.out.println("Existem duas raízes reais");
             }
 
 
