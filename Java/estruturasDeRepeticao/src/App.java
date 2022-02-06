@@ -33,7 +33,7 @@ public class App {
             contador++;
         }*/
         
-        Scanner teclado = new Scanner(System.in);
+        /*Scanner teclado = new Scanner(System.in);
         System.out.println("Digite o valor do fatorial X!:");
         int contador = teclado.nextInt();
         teclado.close();
@@ -42,7 +42,15 @@ public class App {
             f *= contador;
             contador--;
         }
-        System.out.println("O fatorial é " + f);
+        System.out.println("O fatorial é " + f);*/
+
+
+        int contador = 1;
+        do {
+            System.out.println(contador);
+            contador++;
+        } while (contador <=4);
+
 
 
 
