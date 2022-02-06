@@ -55,14 +55,13 @@ public class App {
         if (idade < 16) {
             System.out.println("Não vota");
         }
-            else {
-                if ((idade >= 16 && idade < 18) || (idade > 70)) {
+            else if ((idade >= 16 && idade < 18) || (idade > 70)) {
                     System.out.println("Voto Opcional");
                 }
                 else {
                     System.out.println("Voto obrigatório");
                 }
-            }
+            
 
 
 
