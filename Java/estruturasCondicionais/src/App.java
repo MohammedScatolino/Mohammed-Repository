@@ -29,7 +29,7 @@ public class App {
 
         
         
-        Scanner teclado = new Scanner(System.in);
+        /*Scanner teclado = new Scanner(System.in);
         System.out.println("Digite o valor de ''a'':");
         int a = teclado.nextInt();
         System.out.println("Digite o valor de ''b'':");
@@ -43,8 +43,26 @@ public class App {
         }
             else {
                 System.out.println("Existem duas raízes reais");
-            }
+            }*/
 
+
+
+
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Digite a idade do eleitor");
+        int idade = teclado.nextInt();
+        teclado.close();
+        if (idade < 16) {
+            System.out.println("Não vota");
+        }
+            else {
+                if ((idade >= 16 && idade < 18) || (idade > 70)) {
+                    System.out.println("Voto Opcional");
+                }
+                else {
+                    System.out.println("Voto obrigatório");
+                }
+            }
 
 
 
