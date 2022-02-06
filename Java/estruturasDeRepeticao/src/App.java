@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
         /*int contador = 1;
@@ -18,7 +20,7 @@ public class App {
         }*/
 
 
-        int contador = 1;
+        /*int contador = 1;
         while (contador <= 7) {
             if (contador == 3) {
                 contador++;
@@ -29,7 +31,18 @@ public class App {
             }
             System.out.println(contador);
             contador++;
-        } 
+        }*/
+        
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Digite o valor do fatorial X!:");
+        int contador = teclado.nextInt();
+        teclado.close();
+        int f = 1;
+        while (contador>=1){
+            f *= contador;
+            contador--;
+        }
+        System.out.println("O fatorial é " + f);
 
 
 
