@@ -45,11 +45,26 @@ public class App {
         System.out.println("O fatorial é " + f);*/
 
 
-        int contador = 1;
+        /*int contador = 1;
         do {
             System.out.println(contador);
             contador++;
-        } while (contador <=4);
+        } while (contador <=4);*/
+
+
+
+        String resposta;
+        int soma = 0, numero;
+        Scanner teclado = new Scanner(System.in);
+        do {
+            System.out.println("Digite o valor a ser somado:");
+            numero = teclado.nextInt();
+            soma += numero;
+            System.out.println("Deseja Continuar [S/N]");
+            resposta = teclado.next();         
+        } while (resposta.equals("S"));
+        teclado.close();
+        System.out.println("A soma final é " + soma);
 
 
 
