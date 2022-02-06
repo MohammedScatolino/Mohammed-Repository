@@ -53,7 +53,7 @@ public class App {
 
 
 
-        String resposta;
+        /*String resposta;
         int soma = 0, numero;
         Scanner teclado = new Scanner(System.in);
         do {
@@ -64,7 +64,13 @@ public class App {
             resposta = teclado.next();         
         } while (resposta.equals("S"));
         teclado.close();
-        System.out.println("A soma final é " + soma);
+        System.out.println("A soma final é " + soma);*/
+
+
+
+        for (int cont = 0; cont <= 4; cont++) {
+            System.out.println(cont);
+        }
 
 
 
