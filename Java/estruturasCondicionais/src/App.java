@@ -65,7 +65,7 @@ public class App {
 
         
 
-        Scanner teclado = new Scanner(System.in);
+        /*Scanner teclado = new Scanner(System.in);
         System.out.println("Digite a quantidade de pernas do organismo:");
         int pernas = teclado.nextInt();
         teclado.close();
@@ -86,9 +86,25 @@ public class App {
             default:
                 tipo ="ET";
         }
-        System.out.println("Organismo do Tipo: " + tipo);
-            
+        System.out.println("Organismo do Tipo: " + tipo);*/
 
+
+
+
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Digite o tamanho do lado A:");
+        int a = teclado.nextInt();
+        System.out.println("Digite o tamanho do lado B:");
+        int b = teclado.nextInt();
+        System.out.println("Digite o tamanho do lado C:");
+        int c = teclado.nextInt();
+        teclado.close();
+        if ((a<b+c) && (b<a+c) && (c<a+b)) {
+            System.out.println("Esses três segmentos de reta formam um triângulo");
+        }
+            else {
+                System.out.println("Esses três segmentos de reta NÃO formam um triângulo");
+            }
 
 
     }
