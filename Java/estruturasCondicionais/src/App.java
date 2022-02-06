@@ -48,7 +48,7 @@ public class App {
 
 
 
-        Scanner teclado = new Scanner(System.in);
+        /*Scanner teclado = new Scanner(System.in);
         System.out.println("Digite a idade do eleitor");
         int idade = teclado.nextInt();
         teclado.close();
@@ -60,7 +60,33 @@ public class App {
                 }
                 else {
                     System.out.println("Voto obrigatório");
-                }
+                }*/
+
+
+        
+
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Digite a quantidade de pernas do organismo:");
+        int pernas = teclado.nextInt();
+        teclado.close();
+        String tipo;
+        switch (pernas) {
+            case 1:
+                tipo = "Saci";
+                break;
+            case 2: 
+                tipo = "Bípede";
+                break;
+            case 4: 
+                tipo = "Quadrúpede";
+                break;
+            case 6, 8:
+                tipo = "Aracnídeo";
+                break;
+            default:
+                tipo ="ET";
+        }
+        System.out.println("Organismo do Tipo: " + tipo);
             
 
 
