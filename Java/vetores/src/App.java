@@ -16,12 +16,20 @@ public class App {
 
 
 
-            int numero [] = {4,2,8,8,10};
+            /*int numero [] = {4,2,8,8,10};
             Arrays.sort(numero);
             for (int valor:numero) {
                 System.out.println(valor);
+            }*/
+
+
+
+            int vetor[] = new int[20];
+            Arrays.fill(vetor, 8);
+
+            for (int c = 1; c<vetor.length; c++) {
+                System.out.println(vetor[c]);
             }
-            
         }
 
 
