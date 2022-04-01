@@ -5,9 +5,9 @@ public class Caneta {
     private float ponta;
     private boolean tampada;
 
-    public Caneta() {
-        setModelo("Macaco");
-        setCor("Preto");
+    public Caneta(String m, String c) {
+        setModelo(m);
+        setCor(c);
         setPonta(0.7f);
         tampar();
     }
